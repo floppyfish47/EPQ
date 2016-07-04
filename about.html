@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 
     <title>About this project</title>
 
@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="offcanvas.css" rel="stylesheet">
 
+  <link href="bam.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./assets/js/ie-emulation-modes-warning.js"></script>
@@ -41,12 +42,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">EPQ</a>
+          <div class="navbar-brand" href="#">EPQ</div>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
             <li class="active"><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topic navigation <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="spider silk.html">Spider silk</a></li>
+                <li><a href="#">Velcro</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -79,7 +88,7 @@
 
         <div class="col-xs-12 col-sm-9">
           <p class="pull-right visible-xs">
-
+              <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
 
         </div><!--/.col-xs-12.col-sm-9-->
@@ -89,10 +98,11 @@
 
 
         <footer>
-                <p>&copy; 2016 David's EPQ</p>
+                <p> 2016 David's EPQ</p>
               </footer>
 
     </div><!-- /.container -->
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -101,7 +111,7 @@
     <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="offcanvas.js"></script>
   </body>
 </html>
